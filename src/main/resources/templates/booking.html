@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ULSTU hotel">
+    <meta name="keywords" content="ULSTU, hotel, relax, Ulyanovsk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ULSTU Hotel</title>
+
+    <!--Стили-->
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/style.css" type="text/css">
+</head>
+
+<body>
+<!--Предзагрузка страницы-->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!--Начало шапка под мобильную версию-->
+<div class="offcanvas-menu-overlay"></div>
+<div class="canvas-open">
+    <i class="icon_menu"></i>
+</div>
+<div class="offcanvas-menu-wrapper">
+    <div class="canvas-close">
+        <i class="icon_close"></i>
+    </div>
+    <div class="search-icon  search-switch">
+        <i class="icon_search"></i>
+    </div>
+    <div class="header-configure-area">
+        <div class="language-option">
+            <img src="/public/img/flag-ru.png" alt="">
+            <span>RU <i class="fa fa-angle-down"></i></span>
+            <div class="flag-dropdown">
+                <ul>
+                    <li> <img src="/public/img/flag-eng.png" alt="">
+                        <a href="#">EN</a></li> <!--дублирующая страница на английском-->
+                    <li> <li> <img src="/public/img/flag-china.png" alt="">
+                    <a href="#">CH</a></li> <!--дублирующая страница на китайском-->
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="bk-btn">Забронировать</a>
+    </div>
+    <nav class="mainmenu mobile-menu">
+        <ul>
+            <li class="active"><a href="./booking.html">Главная</a></li>
+            <li><a href="#">Комнаты</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Подробности</a>
+                <ul class="dropdown">
+                    <li><a href="#">О комнатах</a></li>
+                    <li><a href="#">Наш блог</a></li>
+                    <li><a href="#">Гастрономия</a></li>
+                    <li><a href="#">Развлечения</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <div id="mobile-menu-wrap"></div>
+    <div class="top-social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-vk"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <ul class="top-widget">
+        <li><i class="fa fa-phone"></i> +7 (8422) 43-06-43</li>
+        <li><i class="fa fa-envelope"></i> rector@ulstu.ru</li>
+    </ul>
+</div>
+<!-- Конец шапки под мобильную версию -->
+
+<!--Начало шапки-->
+<header class="header-section">
+    <div class="top-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="tn-left">
+                        <li><i class="fa fa-phone"></i> +7 (8422) 43-06-43</li>
+                        <li><i class="fa fa-envelope"></i>  rector@ulstu.ru</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tn-right">
+                        <div class="top-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-vk"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <a href="#" class="bk-btn">Забронировать</a> <!--ссылка на страницу комнат-->
+                        <div class="language-option">
+                            <img src="/public/img/flag-ru.png" alt="">
+                            <span>RU <i class="fa fa-angle-down"></i></span>
+                            <div class="flag-dropdown">
+                                <ul>
+                                    <li> <img src="/public/img/flag-eng.png" alt="">
+                                        <a href="#">EN</a></li> <!--дублирующая страница на английском-->
+                                    <li> <li> <img src="/public/img/flag-china.png" alt="">
+                                        <a href="#">CH</a></li> <!--дублирующая страница на китайском-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <a href="./booking.html">
+                            <img src="/public/img/ulstu-logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="nav-menu">
+                        <nav class="mainmenu">
+                            <ul>
+                                    <li class="active"><a href="./booking.html">Главная</a></li>
+                                <li><a href="#">Комнаты</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Подробности</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">О комнатах</a></li>
+                                        <li><a href="#">Наш блог</a></li>
+                                        <li><a href="#">Гастрономия</a></li>
+                                        <li><a href="#">Развлечения</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="nav-right search-switch"> <!--тут запускается модуль вслывающего окна поиска-->
+                            <i class="icon_search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Конец Шапки-->
+
+<!--Начало секции Оглавление-->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="hero-text">
+                    <h1>УлГТУ Гостиница</h1>
+                    <p> Современная гостиница, расположенная в центре города Ульяновск,
+                        в непосредственной близости от благоустройства зон отдыха и расвлекательных заведений.</p>
+                    <a href="#" class="primary-btn">Подробнее...</a> <!--тут ссылку на страничку О нас-->
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+                <div class="booking-form">
+                    <h3>Бронирование</h3>
+                    <form action="#"> <!--тут ссылку на форму бронирования-->
+                        <div class="check-date">
+                            <label for="date-in">Заезд:</label>
+                            <input type="text" class="date-input" id="date-in">
+                            <i class="icon_calendar"></i>
+                        </div>
+                        <div class="check-date">
+                            <label for="date-out">Выезд:</label>
+                            <input type="text" class="date-input" id="date-out">
+                            <i class="icon_calendar"></i>
+                        </div>
+                        <div class="select-option">
+                            <label for="guest">Гости:</label>
+                            <select id="guest">
+                                <option value="">1 взрослый</option>
+                                <option value="">2 взрослых</option>
+                                <option value="">3 взрослых</option>
+                                <option value="">4 взрослых</option>
+                            </select>
+                        </div>
+                        <div class="select-option">
+                            <label for="room">Комната:</label>
+                            <select id="room">
+                                <option value="">Посольский люкс</option>
+                                <option value="">Полулюкс с двумя односпальными кроватями</option>
+                                <option value="">Делюкс с одной двуспальной кроватью</option>
+                                <option value="">Стандарт с одной двуспальной кроватью</option>
+                            </select>
+                        </div>
+                        <button type="submit">Проверить доступность</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-slider owl-carousel">
+        <div class="hs-item set-bg" data-setbg="/public/img/hero/hero-1.jpg"></div>
+        <div class="hs-item set-bg" data-setbg="/public/img/hero/hero-2.jpg"></div>
+        <div class="hs-item set-bg" data-setbg="/public/img/hero/hero-3.jpg"></div>
+    </div>
+</section>
+<!--Конец секции Оглавления-->
+
+<!--Начало секции О нас-->
+<section class="aboutus-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <div class="section-title">
+                        <span>О нас</span>
+                        <h2>УлГТУ <br />Гостиница Ульяновска</h2>
+                    </div>
+                    <p class="f-para">История Ульяновского государственного технического университета началась в 1957 году,
+                        когда согласно постановлению Совета министров РСФСР от 6 сентября 1957 года
+                        и приказу Министерства высшего образования СССР от 18 сентября 1957 года в городе Ульяновске
+                        был организован вечерний политехнический институт на базе
+                        вечернего факультета Куйбышевского индустриального института.</p>
+                    <p class="s-para">Гостиница расположена на территории кампуса УЛГТУ,
+                        на северной площадке (ул.Северный Венец, 32).</p>
+                    <a href="#" class="primary-btn about-btn">Подробнее...</a> <!--тут ссылку на страничку О нас-->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-pic">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="/public/img/about/about-1.jpg" alt="about-1.jpg">
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="/public/img/about/about-2.jpg" alt="about-2.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Конец секции О нас-->
+
+<!--Начало секции сервиса-->
+<section class="services-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <span>Почему выбрать нас</span>
+                    <h2>Наш Сервис</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item">
+                    <i class="flaticon-036-parking"></i>
+                    <h4>Гид по Ульяновску</h4>
+                    <p>Проводим экскурсии для гостей по Ульяновску.
+                        Выезжаем в походы и на экскурсии по Ульяновской области.
+                        Организуем выезды по Поволжью.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item">
+                    <i class="flaticon-033-dinner"></i>
+                    <h4>Кафетерий</h4>
+                    <p>Специализируется на традиционной русской кухне,
+                        предлагая гостям купеческие и аристократические рецепты,
+                        а также современные веяния отечественной гастрономии.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item">
+                    <i class="flaticon-026-bed"></i>
+                    <h4>«KIDS CAMP POLYTECH»</h4>
+                    <p>Дети в возрасте от 6,5 до 13 лет в игровой форме смогут приобрести навыки
+                        цифровой безопасности, коммуникации, лидерства, финансовой грамотности,
+                        предпринимательства, самоорганизации и управления эмоция.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item">
+                    <i class="flaticon-024-towel"></i>
+                    <h4>Прачечная</h4>
+                    <p>Автоматизированная прачечная самообслуживания.
+                        У нас стирают объёмные вещи.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item">
+                    <i class="flaticon-044-clock-1"></i>
+                    <h4>Расположение</h4>
+                    <p>Круглосуточная транспортная доступность благодаря
+                        удобному расположению в центре города.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item">
+                    <i class="flaticon-012-cocktail"></i>
+                    <h4>Бар и напитки</h4>
+                    <p>Тут вы можете ознакомиться с нашим <a href="https://t.me/ulgtuvkusnovovsem/262">Меню</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Конец секции сервиса-->
+
+<!--Начало секции комнат-->
+<section class="hp-room-section">
+    <div class="container-fluid">
+        <div class="hp-room-items">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="hp-room-item set-bg" data-setbg="/public/img/room/posol-room-prev.jpg">
+                        <div class="hr-text">
+                            <h3>Посольский люкс</h3>
+                            <h2>44000₽<span> /1 ночь/ 2 гостя</span></h2>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td class="r-o">Размер:</td>
+                                    <td>90 м²</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Количество комнат:</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Вместимость:</td>
+                                    <td>до 3 мест</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Кровать:</td>
+                                    <td>«King size»</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Дополнительно:</td>
+                                    <td>Сейф, Кофемашина, Wifi, Три телевизора, Ванна,...</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="primary-btn">Подробнее</a> <!--на карточку комнаты-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="hp-room-item set-bg" data-setbg="/public/img/room/slux-room-prev.jpg">
+                        <div class="hr-text">
+                            <h3>Полулюкс с двумя односпальными кроватями</h3>
+                            <h2>22500₽<span> /1 ночь/ 3 гостя</span></h2>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td class="r-o">Размер:</td>
+                                    <td>45 м²</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Количество комнат:</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Вместимость:</td>
+                                    <td>до 4 мест. Один ребёнок до 6 лет — можно без отдельного спального места.</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Кровать:</td>
+                                    <td>Две односпальные кровати</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Дополнительно:</td>
+                                    <td>Кондиционер, Туалет, Wifi, Цифровое тв, Ванна,...</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="primary-btn">Подробнее</a> <!--на карточку комнаты-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="hp-room-item set-bg" data-setbg="/public/img/room/dlux-room-prev.jpg">
+                        <div class="hr-text">
+                            <h3>Делюкс с одной двуспальной кроватью</h3>
+                            <h2>13500₽<span> /1 ночь/ 2 гостя</span></h2>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td class="r-o">Размер:</td>
+                                    <td>30 м²</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Количество комнат:</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Вместимость:</td>
+                                    <td>до 3 мест. Один ребёнок до 6 лет — можно без отдельного спального места.</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Кровать:</td>
+                                    <td>Двуспальная кровать</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Дополнительно:</td>
+                                    <td>Сейф, Кондиционер, Wifi, Телевизор с плоским экраном, Ванна,...</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="primary-btn">Подробнее</a> <!--на карточку комнаты-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="hp-room-item set-bg" data-setbg="/public/img/room/standart-room-prev.jpg">
+                        <div class="hr-text">
+                            <h3>Стандарт с одной двуспальной кроватью</h3>
+                            <h2>7500₽<span> /1 ночь/ 1 гость</span></h2>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td class="r-o">Размер:</td>
+                                    <td>26 м²</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Количество комнат:</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Вместимость:</td>
+                                    <td>Вместимость до 2 мест. Один ребёнок до 6 лет — можно без отдельного спального места.</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Кровать:</td>
+                                    <td>Двуспальная кровать</td>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Дополнительно:</td>
+                                    <td>Кондиционер, Душевая кабина, Wifi, Цифровое тв...</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="primary-btn">Подробнее</a> <!--на карточку комнаты-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Конец секции комнат-->
+
+<!--Начало отзывов-->
+<section class="testimonial-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <span>Отзывы</span>
+                    <h2>Что о нас говорят?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="testimonial-slider owl-carousel">
+                    <div class="ts-item">
+                        <p>В настоящее время отдыхаю семьей в этом отеле, дети в восторге!
+                            От анамации, питания, развлечений. Номера, бассейны и рестораны очень чистые!!!
+                            Доброжелательный и отзывчивый персонал!!!
+                            Хотела выразить благодарность Веронике и Анастасии за безупречно проведённую семейную фотосессию !!!
+                            Работать с вами одно удовольствие.</p>
+                        <div class="ti-author">
+                            <div class="rating">
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                            </div>
+                            <h5> - Галинка Б.</h5>
+                        </div>
+                        <img src="/public/img/testimonials-logo.jpg" alt="">
+                    </div>
+                    <div class="ts-item">
+                        <p>Замечательный чистый новый отель, приветливый персонал, стильные номера,
+                            отличная уборка, шикарный бассейн , разнообразное питание, комфортный спортивный корт.
+                            Мини город в городе.
+                            Никуда выходить за пределы даже не хочется, настолько все продуманно и располагает к
+                            расслабленному отдыху. Единственное, что для полного кайфа ребёнку не хватило хоть одной аквагорки,
+                            но исправим посещением городского аквапарка :). Настоятельно рекомендую этот отель.</p>
+                        <div class="ti-author">
+                            <div class="rating">
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star-half_alt"></i>
+                            </div>
+                            <h5> - Кира Андреева</h5>
+                        </div>
+                        <img src="/public/img/testimonials-logo.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Конец отзывов-->
+
+<!--Начало блога-->
+<section class="blog-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <span>Блог нашей Гостиницы</span>
+                    <h2>Преимущества</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="blog-item set-bg" data-setbg="/public/img/blog/blog-media.jpg">
+                    <div class="bi-text">
+                        <span class="b-tag">Развитие навыков</span>
+                        <h4><a href="#">Бесплатные курсы фото и видео в медиацентре</a></h4>
+                        <div class="b-time"><i class="icon_clock_alt"></i>
+                            <a href="https://vk.com/mediaulstu">Записаться и новости тут</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item set-bg" data-setbg="/public/img/blog/blog-opera.jpg">
+                    <div class="bi-text">
+                        <span class="b-tag">Искусство</span>
+                        <h4><a href="#">Теарт, мюзиклы, танцы и многое другое!</a></h4>
+                        <div class="b-time"><i class="icon_clock_alt"></i> Расписание пока недоступно</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item set-bg" data-setbg="/public/img/blog/blog-sport.jpg">
+                    <div class="bi-text">
+                        <span class="b-tag">Спорт</span>
+                        <h4><a href="#">Спортивные секции на любой вкус</a></h4>
+                        <div class="b-time"><i class="icon_clock_alt"></i> Круглосуточно</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="blog-item small-size set-bg" data-setbg="/public/img/blog/blog-museum.jpg">
+                    <div class="bi-text">
+                        <span class="b-tag">Посещение музея</span>
+                        <h4><a href="#">Центр патриотического воспитания студентов</a></h4>
+                        <div class="b-time"><i class="icon_clock_alt"></i>
+                            <a href="https://vk.com/museum_ulstu">Записаться можно тут</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item small-size set-bg" data-setbg="/public/img/blog/blog-tour.jpg">
+                    <div class="bi-text">
+                        <span class="b-tag">Туризм</span>
+                        <h4><a href="#">Туристический клуб «Бумеранг»</a></h4>
+                        <div class="b-time"><i class="icon_clock_alt"></i> весна-осень 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Конец блога-->
+
+<!--Начало Подвала-->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-text">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="ft-about">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="/public/img/ulstu-footer-logo.png" alt="">
+                            </a>
+                        </div>
+                        <p>УлГТУ является участником Научно-образовательного центра мирового уровня.
+                            <br />А это означает, что в нашей гостинице не будет скучно! </p>
+                        <div class="fa-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCFYtcIN7SAzjPYqht_9uf3Q">
+                                <i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Контакты для связи -->
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="ft-contact">
+                        <h6>Связаться с нами</h6>
+                        <ul>
+                            <li>+7 (8422) 43-06-43</li>
+                            <li>rector@ulstu.ru</li>
+                            <li>432027, г. Ульяновск, ул. Северный Венец, д. 32</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Подписка на новости-->
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="ft-newslatter">
+                        <h6>Подписка на новости</h6>
+                        <p>Получать последние новости и обновления</p>
+                        <form action="#" class="fn-form"> <!--отправка пока вникуда-->
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fa fa-send"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Зона копирайта-->
+    <div class="copyright-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Соглашения</a></li>
+                        <li><a href="#">Политика конфидициальности</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="co-text">
+                        <p>Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This site is made
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            by
+                            <a href="https://github.com/Euphoria73/ULSTU_WEB-Programming" target="_blank">Euphoria73</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Конец Подвала-->
+
+<!--Начало Модуля поиска (переход на него по лупе в шапке)-->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch"><i class="icon_close"></i></div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Введите текст для поиска.....">
+        </form>
+    </div>
+</div>
+<!--Конец Модуля поиска-->
+
+<!--Js скрипты-->
+<script src="/public/js/jquery-3.6.1.min.js"></script> <!--основная библиотека jquery-->
+<script src="/public/js/bootstrap.min.js"></script> <!--основной шаблонизатор стилей-->
+<script src="/public/js/jquery.magnific-popup.min.js"></script> <!--для всплывающих окон-->
+<script src="/public/js/jquery.nice-select.min.js"></script> <!--заменяет стандартный select на кастомизированный dropdown-->
+<script src="/public/js/jquery-ui.min.js"></script> <!--для интерфейса-->
+<script src="/public/js/jquery.slicknav.js"></script> <!--адаптивное и многоуровнёвое мобильное меню-->
+<script src="/public/js/owl.carousel.min.js"></script> <!--плагин для карусели-->
+<script src="/public/js/main.js"></script> <!--ручные настройки-->
+</body>
+
+</html>
