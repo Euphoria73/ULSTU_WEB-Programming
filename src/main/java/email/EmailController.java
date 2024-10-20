@@ -20,7 +20,7 @@ public class EmailController {
     @GetMapping("/")
     public String indexForm(Model model) {
         model.addAttribute("emailForm", new EmailForm());
-        return "index";
+        return "booking";
     }
 
     @PostMapping("/sendEmail")
