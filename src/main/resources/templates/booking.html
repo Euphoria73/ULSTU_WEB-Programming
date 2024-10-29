@@ -7,6 +7,7 @@
     <meta name="keywords" content="ULSTU, hotel, relax, Ulyanovsk">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/js/ajax.js"></script>
     <title>ULSTU Hotel</title>
 
     <!--Стили-->
@@ -137,8 +138,8 @@
                     <div class="nav-menu">
                         <nav class="mainmenu">
                             <ul>
-                                    <li class="active"><a href="./booking.html">Главная</a></li>
-                                <li><a href="#">Комнаты</a></li>
+                                    <li class="active"><a href="/">Главная</a></li>
+                                <li><a href="/list">Комнаты</a></li>
                                 <li><a href="#">О нас</a></li>
                                 <li><a href="#">Подробности</a>
                                     <ul class="dropdown">
@@ -175,39 +176,44 @@
                     <a href="#" class="primary-btn">Подробнее...</a> <!--тут ссылку на страничку О нас-->
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+            <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1" id="editModal" >
                 <div class="booking-form">
                     <h3>Бронирование</h3>
-                    <form action="#"> <!--тут ссылку на форму бронирования-->
+                    <form th:action="@{/sendEmail}" th:object="${emailForm}" method="post"> <!--тут ссылку на форму бронирования-->
                         <div class="check-date">
-                            <label for="date-in">Заезд:</label>
-                            <input type="text" class="date-input" id="date-in">
+                            <label for="editDateIn">Заезд:</label>
+                            <input type="text" class="date-input" id="editDateIn" th:field="*{dateIn}">
                             <i class="icon_calendar"></i>
                         </div>
                         <div class="check-date">
-                            <label for="date-out">Выезд:</label>
-                            <input type="text" class="date-input" id="date-out">
+                            <label for="editDateOut">Выезд:</label>
+                            <input type="text" class="date-input" id="editDateOut" th:field="*{dateOut}">
                             <i class="icon_calendar"></i>
                         </div>
-                        <div class="select-option">
-                            <label for="guest">Гости:</label>
-                            <select id="guest">
-                                <option value="">1 взрослый</option>
-                                <option value="">2 взрослых</option>
-                                <option value="">3 взрослых</option>
-                                <option value="">4 взрослых</option>
+                        <div class="select-option" th:field="*{getGuestCount()}">
+                            <label for="editGuestCount">Число гостей:</label>
+                            <select id="editGuestCount" >
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
                             </select>
                         </div>
-                        <div class="select-option">
-                            <label for="room">Комната:</label>
-                            <select id="room">
-                                <option value="">Посольский люкс</option>
-                                <option value="">Полулюкс с двумя односпальными кроватями</option>
-                                <option value="">Делюкс с одной двуспальной кроватью</option>
-                                <option value="">Стандарт с одной двуспальной кроватью</option>
+                        <div class="select-option" th:field="*{room}">
+                            <label for="editRoom">Комната:</label>
+                            <select id="editRoom" >
+                                <option value="Посольский люкс">Посольский люкс</option>
+                                <option value="Полулюкс с двумя односпальными кроватями">Полулюкс с двумя односпальными кроватями</option>
+                                <option value="Делюкс с одной двуспальной кроватью">Делюкс с одной двуспальной кроватью</option>
+                                <option value="Стандарт с одной двуспальной кроватью">Стандарт с одной двуспальной кроватью</option>
                             </select>
                         </div>
-                        <button type="submit">Проверить доступность</button>
+                        <div class="modal-footer">
+                            <button type="button" onclick="save()">ЗАБРОНИРОВАТЬ!</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                    onclick="$('#editModal').modal('hide');">Отказаться
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -631,7 +637,9 @@
                         <h6>Подписка на новости</h6>
                         <p>Получать последние новости и обновления</p>
                         <form action="#" class="fn-form"> <!--отправка пока вникуда-->
-                            <input type="text" placeholder="Email">
+                            <label>
+                                <input type="text" placeholder="Email">
+                            </label>
                             <button type="submit"><i class="fa fa-send"></i></button>
                         </form>
                     </div>
@@ -673,7 +681,7 @@
     <div class="h-100 d-flex align-items-center justify-content-center">
         <div class="search-close-switch"><i class="icon_close"></i></div>
         <form class="search-model-form">
-            <input type="text" id="search-input" placeholder="Введите текст для поиска.....">
+            <label for="search-input"></label><input type="text" id="search-input" placeholder="Введите текст для поиска.....">
         </form>
     </div>
 </div>

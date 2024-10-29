@@ -3,44 +3,55 @@ package email.model;
 import email.core.BaseEntity;
 
 import javax.persistence.Entity;
+import java.util.Date;
 
 @Entity
 public class Email extends BaseEntity {
-    private String to;
-    private String subject;
-    private String message;
+    private Date dateIn;
+    private Date dateOut;
+    private String room;
+    private Integer guestCount;
 
     public Email() {
 
     }
 
-    public Email(String to, String subject, String message) {
-        this.to = to;
-        this.subject = subject;
-        this.message = message;
+    public Email(Date dateIn, Date dateOut,String room, Integer guestCount) {
+        this.dateIn = dateIn;
+        this.dateOut = dateOut;
+        this.room = room;
+        this.guestCount = guestCount;
     }
 
-    public String getTo() {
-        return to;
+    public Date getDateIn() {
+        return dateIn;
     }
 
-    public void setTo(String to) {
-        this.to = to;
+    public void setDateIn(Date dateIn) {
+        this.dateIn = dateIn;
     }
 
-    public String getSubject() {
-        return subject;
+    public Date getDateOut() {
+        return dateOut;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setDateOut(Date dateOut) {
+        this.dateOut = dateOut;
     }
 
-    public String getMessage() {
-        return message;
+    public String getRoom() {
+        return room;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setRoom(String room) {
+        this.room = room;
+    }
+
+    public Integer getGuestCount() {
+        return guestCount;
+    }
+
+    public void setGuestCount(Integer guestCount) {
+        this.guestCount = guestCount;
     }
 }

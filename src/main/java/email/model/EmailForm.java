@@ -1,40 +1,52 @@
 package email.model;
 
+import java.util.Date;
+
 public class EmailForm {
-    private String subject;
-    private String to;
-    private String message;
+    private Date dateIn;
+    private Date dateOut;
+    private String room;
+    private Integer guestCount;
 
-    public String getSubject() {
-        return subject;
+    public Date getDateIn() {
+        return dateIn;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setDateIn(Date dateIn) {
+        this.dateIn = dateIn;
     }
 
-    public String getTo() {
-        return to;
+    public Date getDateOut() {
+        return dateOut;
     }
 
-    public void setTo(String to) {
-        this.to = to;
+    public void setDateOut(Date dateOut) {
+        this.dateOut = dateOut;
     }
 
-    public String getMessage() {
-        return message;
+    public String getRoom() {
+        return room;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setRoom(String room) {
+        this.room = room;
+    }
+
+    public Integer getGuestCount() {
+        return guestCount;
+    }
+
+    public void setGuestCount(Integer guestCount) {
+        this.guestCount = guestCount;
     }
 
     @Override
     public String toString() {
         return "EmailForm{" +
-                "subject='" + subject + '\'' +
-                ", to='" + to + '\'' +
-                ", message='" + message + '\'' +
+                "dateIn='" + dateIn + '\'' +
+                "dateOut='" + dateOut + '\'' +
+                ", room='" + room + '\'' +
+                ", guestCount='" + guestCount + '\'' +
                 '}';
     }
 }
