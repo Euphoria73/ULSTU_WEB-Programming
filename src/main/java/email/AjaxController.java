@@ -36,13 +36,14 @@ public class AjaxController {
     @ResponseBody
     @PostMapping("/saveEmail")
     public Email saveEmail(@RequestBody Email email) {
-        if (email.getTo().isEmpty()) {
-            throw new RuntimeException("Поле 'Кому' не должно быть пустым");
+        if (email.getRoom().isEmpty()) {
+            throw new RuntimeException("Поле 'Комната' не должно быть пустым");
         }
         Email previousEmail = emailService.getEmailById(email.getId());
-        previousEmail.setMessage(email.getMessage());
-        previousEmail.setSubject(email.getSubject());
-        previousEmail.setTo(email.getTo());
+        previousEmail.setRoom(email.getRoom());
+        previousEmail.setGuestCount(email.getGuestCount());
+        previousEmail.setDateOut(email.getDataOut());
+        previousEmail.setDataIn(email.getDataIn());
         return emailService.save(previousEmail);
     }
 }
